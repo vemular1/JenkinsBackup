@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors>
+    <string>jenkins.CLI</string>
+    <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
+  </disabledAdministrativeMonitors>
+  <version>2.46.2</version>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:vemular1</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:vemular1</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:vemular1</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:vemular1</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:vemular1</permission>
+    <permission>hudson.model.Computer.Build:vemular1</permission>
+    <permission>hudson.model.Computer.Configure:vemular1</permission>
+    <permission>hudson.model.Computer.Connect:vemular1</permission>
+    <permission>hudson.model.Computer.Create:vemular1</permission>
+    <permission>hudson.model.Computer.Delete:vemular1</permission>
+    <permission>hudson.model.Computer.Disconnect:vemular1</permission>
+    <permission>hudson.model.Hudson.Administer:vemular1</permission>
+    <permission>hudson.model.Hudson.Read:vemular1</permission>
+    <permission>hudson.model.Item.Build:vemular1</permission>
+    <permission>hudson.model.Item.Cancel:vemular1</permission>
+    <permission>hudson.model.Item.Configure:vemular1</permission>
+    <permission>hudson.model.Item.Create:vemular1</permission>
+    <permission>hudson.model.Item.Delete:vemular1</permission>
+    <permission>hudson.model.Item.Discover:vemular1</permission>
+    <permission>hudson.model.Item.Read:vemular1</permission>
+    <permission>hudson.model.Item.Workspace:vemular1</permission>
+    <permission>hudson.model.Run.Delete:vemular1</permission>
+    <permission>hudson.model.Run.Replay:vemular1</permission>
+    <permission>hudson.model.Run.Update:vemular1</permission>
+    <permission>hudson.model.View.Configure:vemular1</permission>
+    <permission>hudson.model.View.Create:vemular1</permission>
+    <permission>hudson.model.View.Delete:vemular1</permission>
+    <permission>hudson.model.View.Read:vemular1</permission>
+    <permission>hudson.scm.SCM.Tag:vemular1</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>-1</slaveAgentPort>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>

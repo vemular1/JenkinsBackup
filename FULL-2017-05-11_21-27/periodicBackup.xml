@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.periodicbackup.PeriodicBackupLink plugin="periodicbackup@1.3">
+  <fileManagerPlugin class="org.jenkinsci.plugins.periodicbackup.ConfigOnly">
+    <restorePolicy class="org.jenkinsci.plugins.periodicbackup.OverwriteRestorePolicy"/>
+  </fileManagerPlugin>
+  <locationPlugins/>
+  <storagePlugins>
+    <org.jenkinsci.plugins.periodicbackup.TarGzStorage/>
+  </storagePlugins>
+  <backupNow>false</backupNow>
+  <tempDirectory>/../../../backup/Jenkins-Config</tempDirectory>
+  <cron>H/5 * * * *</cron>
+  <cycleQuantity>1</cycleQuantity>
+  <cycleDays>7</cycleDays>
+</org.jenkinsci.plugins.periodicbackup.PeriodicBackupLink>

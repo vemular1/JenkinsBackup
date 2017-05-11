@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer plugin="resource-disposer@0.6">
+  <id>AsyncResourceDisposer</id>
+  <backlog class="java.util.Collections$SetFromMap" serialization="custom">
+    <unserializable-parents/>
+    <java.util.Collections_-SetFromMap>
+      <default>
+        <m class="concurrent-hash-map">
+          <entry>
+            <org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer_-WorkItem>
+              <disposer reference="../../../../../../.."/>
+              <disposable class="hudson.plugins.ws_cleanup.Wipeout$DisposableImpl" plugin="ws-cleanup@0.33">
+                <node></node>
+                <path>/var/lib/jenkins/workspace/MyBlog_ws-cleanup_1493343265772</path>
+              </disposable>
+              <registered>2017-04-28 01:34:25.776 UTC</registered>
+              <lastState class="org.jenkinsci.plugins.resourcedisposer.Disposable$State$Thrown">
+                <displayName>Unable to delete &apos;/var/lib/jenkins/workspace/MyBlog_ws-cleanup_1493343265772/builds/builds/legacyIds&apos;. Tried 3 times (of a maximum of 3) waiting 0.1 sec between attempts.</displayName>
+                <cause class="java.io.IOException">
+                  <detailMessage>Unable to delete &apos;/var/lib/jenkins/workspace/MyBlog_ws-cleanup_1493343265772/builds/builds/legacyIds&apos;. Tried 3 times (of a maximum of 3) waiting 0.1 sec between attempts.</detailMessage>
+                  <cause class="java.nio.file.AccessDeniedException">
+                    <stackTrace>
+                      <trace>sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)</trace>
+                      <trace>sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)</trace>
+                      <trace>sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)</trace>
+                      <trace>sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:244)</trace>
+                      <trace>sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:108)</trace>
+                      <trace>java.nio.file.Files.deleteIfExists(Files.java:1165)</trace>
+                      <trace>hudson.Util.tryOnceDeleteFile(Util.java:287)</trace>
+                      <trace>hudson.Util.deleteFile(Util.java:243)</trace>
+                      <trace>hudson.FilePath.deleteRecursive(FilePath.java:1209)</trace>
+                      <trace>hudson.FilePath.deleteContentsRecursive(FilePath.java:1218)</trace>
+                      <trace>hudson.FilePath.deleteRecursive(FilePath.java:1200)</trace>
+                      <trace>hudson.FilePath.deleteContentsRecursive(FilePath.java:1218)</trace>
+                      <trace>hudson.FilePath.deleteRecursive(FilePath.java:1200)</trace>
+                      <trace>hudson.FilePath.deleteContentsRecursive(FilePath.java:1218)</trace>
+                      <trace>hudson.FilePath.deleteRecursive(FilePath.java:1200)</trace>
+                      <trace>hudson.FilePath.access$1000(FilePath.java:195)</trace>
+                      <trace>hudson.FilePath$14.invoke(FilePath.java:1179)</trace>
+                      <trace>hudson.FilePath$14.invoke(FilePath.java:1176)</trace>
+                      <trace>hudson.FilePath.act(FilePath.java:996)</trace>
+                      <trace>hudson.FilePath.act(FilePath.java:974)</trace>
+                      <trace>hudson.FilePath.deleteRecursive(FilePath.java:1176)</trace>
+                      <trace>hudson.plugins.ws_cleanup.Wipeout$DisposableImpl.dispose(Wipeout.java:110)</trace>
+                      <trace>org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer$WorkItem.run(AsyncResourceDisposer.java:286)</trace>
+                      <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+                      <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+                      <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+                      <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)</trace>
+                      <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)</trace>
+                      <trace>java.lang.Thread.run(Thread.java:748)</trace>
+                    </stackTrace>
+                    <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                      <c class="list"/>
+                      <list reference="../c"/>
+                    </suppressedExceptions>
+                    <file>/var/lib/jenkins/workspace/MyBlog_ws-cleanup_1493343265772/builds/builds/legacyIds</file>
+                  </cause>
+                  <stackTrace>
+                    <trace>hudson.Util.deleteFile(Util.java:248)</trace>
+                    <trace>hudson.FilePath.deleteRecursive(FilePath.java:1209)</trace>
+                    <trace>hudson.FilePath.deleteContentsRecursive(FilePath.java:1218)</trace>
+                    <trace>hudson.FilePath.deleteRecursive(FilePath.java:1200)</trace>
+                    <trace>hudson.FilePath.deleteContentsRecursive(FilePath.java:1218)</trace>
+                    <trace>hudson.FilePath.deleteRecursive(FilePath.java:1200)</trace>
+                    <trace>hudson.FilePath.deleteContentsRecursive(FilePath.java:1218)</trace>
+                    <trace>hudson.FilePath.deleteRecursive(FilePath.java:1200)</trace>
+                    <trace>hudson.FilePath.access$1000(FilePath.java:195)</trace>
+                    <trace>hudson.FilePath$14.invoke(FilePath.java:1179)</trace>
+                    <trace>hudson.FilePath$14.invoke(FilePath.java:1176)</trace>
+                    <trace>hudson.FilePath.act(FilePath.java:996)</trace>
+                    <trace>hudson.FilePath.act(FilePath.java:974)</trace>
+                    <trace>hudson.FilePath.deleteRecursive(FilePath.java:1176)</trace>
+                    <trace>hudson.plugins.ws_cleanup.Wipeout$DisposableImpl.dispose(Wipeout.java:110)</trace>
+                    <trace>org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer$WorkItem.run(AsyncResourceDisposer.java:286)</trace>
+                    <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+                    <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+                    <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+                    <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)</trace>
+                    <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)</trace>
+                    <trace>java.lang.Thread.run(Thread.java:748)</trace>
+                  </stackTrace>
+                  <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" reference="../cause/suppressedExceptions"/>
+                </cause>
+              </lastState>
+              <disposableInfo>hudson.plugins.ws_cleanup.Wipeout$DisposableImpl:Workspace master:/var/lib/jenkins/workspace/MyBlog_ws-cleanup_1493343265772</disposableInfo>
+            </org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer_-WorkItem>
+            <boolean>true</boolean>
+          </entry>
+        </m>
+      </default>
+    </java.util.Collections_-SetFromMap>
+  </backlog>
+</org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jvnet.hudson.plugins.SSHBuildWrapper_-DescriptorImpl plugin="ssh@2.4">
+  <sites>
+    <org.jvnet.hudson.plugins.SSHSite>
+      <hostname>vemular14.mylabserver.com</hostname>
+      <port>22</port>
+      <username>user</username>
+      <password>Bazingaa@11</password>
+      <keyfile></keyfile>
+      <serverAliveInterval>0</serverAliveInterval>
+      <pty>false</pty>
+    </org.jvnet.hudson.plugins.SSHSite>
+    <org.jvnet.hudson.plugins.SSHSite>
+      <hostname>vemular13.mylabserver.com</hostname>
+      <port>22</port>
+      <username>user</username>
+      <password>Bazingaa@11</password>
+      <keyfile></keyfile>
+      <serverAliveInterval>0</serverAliveInterval>
+      <pty>false</pty>
+    </org.jvnet.hudson.plugins.SSHSite>
+    <org.jvnet.hudson.plugins.SSHSite>
+      <hostname>vemular16.mylabserver.com</hostname>
+      <port>22</port>
+      <username>user</username>
+      <password>Bazingaa@11</password>
+      <keyfile></keyfile>
+      <serverAliveInterval>0</serverAliveInterval>
+      <pty>false</pty>
+    </org.jvnet.hudson.plugins.SSHSite>
+  </sites>
+</org.jvnet.hudson.plugins.SSHBuildWrapper_-DescriptorImpl>
